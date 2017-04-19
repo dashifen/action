@@ -1,0 +1,26 @@
+{
+	"name": "dashifen/action",
+	"description": "an action object that handles a web request, interacts with a domain, and helps to emit a response",
+	"minimum-stability": "dev",
+	"type": "library",
+	"authors": [
+		{
+			"name": "David Dashifen Kees",
+			"email": "dashifen@dashifen.com",
+			"homepage": "https://dashifen.com",
+			"role": "developer"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Dashifen\\Action\\": "src/"
+		}
+	},
+	"require": {
+		"php": "^7.1",
+		"dashifen/domain": "<2.0",
+		"dashifen/request": "^1.0",
+		"dashifen/response": "<2.0"
+	},
+	"license": "MIT"
+}
