@@ -2,6 +2,8 @@
 
 namespace Dashifen\Action;
 
+use Dashifen\Response\ResponseInterface;
+
 /**
  * Interface ActionInterface
  *
@@ -9,7 +11,7 @@ namespace Dashifen\Action;
  */
 interface ActionInterface {
 	/**
-	 * @return void;
+	 * @return ResponseInterface;
 	 */
-	public function execute(): void;
+	public function execute(): ResponseInterface;
 }

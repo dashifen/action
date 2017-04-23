@@ -40,7 +40,7 @@ abstract class AbstractAction implements ActionInterface {
 	}
 	
 	/**
-	 * @return void
+	 * @return ResponseInterface
 	 */
-	abstract public function execute(): void;
+	abstract public function execute(): ResponseInterface;
 }
