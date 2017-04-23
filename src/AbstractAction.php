@@ -4,6 +4,7 @@ namespace Dashifen\Action;
 
 use Dashifen\Domain\DomainInterface;
 use Dashifen\Request\RequestInterface;
+use Dashifen\Response\Factory\ResponseFactoryInterface;
 use Dashifen\Response\ResponseInterface;
 
 abstract class AbstractAction implements ActionInterface {
@@ -18,25 +19,25 @@ abstract class AbstractAction implements ActionInterface {
 	protected $domain;
 	
 	/**
-	 * @var ResponseInterface $response
+	 * @var ResponseFactoryInterface $responseFactory
 	 */
-	protected $response;
+	protected $responseFactory;
 	
 	/**
 	 * AbstractAction constructor.
 	 *
 	 * @param RequestInterface  $request
 	 * @param DomainInterface   $domain
-	 * @param ResponseInterface $response
+	 * @param ResponseFactoryInterface $responseFactory
 	 */
 	public function __construct(
 		RequestInterface $request,
 		DomainInterface $domain,
-		ResponseInterface $response
+		ResponseFactoryInterface $responseFactory
 	) {
 		$this->request = $request;
 		$this->domain = $domain;
-		$this->response = $response;
+		$this->responseFactory = $responseFactory;
 	}
 	
 	/**
