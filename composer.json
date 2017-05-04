@@ -19,8 +19,8 @@
 	"require": {
 		"php": "^7.1",
 		"dashifen/domain": "<2.0",
-		"dashifen/request": "^1.0",
-		"dashifen/response": "<2.0"
+		"dashifen/request": "^1",
+		"dashifen/response": "^1"
 	},
 	"license": "MIT"
 }

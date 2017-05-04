@@ -11,7 +11,9 @@ use Dashifen\Response\ResponseInterface;
  */
 interface ActionInterface {
 	/**
+	 * @param string $parameter
+	 *
 	 * @return ResponseInterface;
 	 */
-	public function execute(): ResponseInterface;
+	public function execute(string $parameter = ""): ResponseInterface;
 }

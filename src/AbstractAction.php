@@ -40,7 +40,9 @@ abstract class AbstractAction implements ActionInterface {
 	}
 	
 	/**
+	 * @param string $parameter
+	 *
 	 * @return ResponseInterface
 	 */
-	abstract public function execute(): ResponseInterface;
+	abstract public function execute(string $parameter = ""): ResponseInterface;
 }
