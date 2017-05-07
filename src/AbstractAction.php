@@ -5,6 +5,7 @@ namespace Dashifen\Action;
 use Dashifen\Domain\DomainInterface;
 use Dashifen\Request\RequestInterface;
 use Dashifen\Response\ResponseInterface;
+use Interop\Container\ContainerInterface;
 
 abstract class AbstractAction implements ActionInterface {
 	/**
@@ -41,8 +42,9 @@ abstract class AbstractAction implements ActionInterface {
 	
 	/**
 	 * @param string $parameter
+	 * @param ContainerInterface $container
 	 *
 	 * @return ResponseInterface
 	 */
-	abstract public function execute(string $parameter = ""): ResponseInterface;
+	abstract public function execute(string $parameter = "", ContainerInterface $container = null): ResponseInterface;
 }
