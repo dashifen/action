@@ -2,10 +2,10 @@
 
 namespace Dashifen\Action;
 
+use Aura\Di\Container;
 use Dashifen\Domain\DomainInterface;
 use Dashifen\Request\RequestInterface;
 use Dashifen\Response\ResponseInterface;
-use Interop\Container\ContainerInterface;
 
 abstract class AbstractAction implements ActionInterface {
 	/**
@@ -24,7 +24,7 @@ abstract class AbstractAction implements ActionInterface {
 	protected $response;
 	
 	/**
-	 * @var ContainerInterface $container
+	 * @var Container $container
 	 */
 	protected $container;
 	
@@ -34,13 +34,13 @@ abstract class AbstractAction implements ActionInterface {
 	 * @param RequestInterface   $request
 	 * @param DomainInterface    $domain
 	 * @param ResponseInterface  $response
-	 * @param ContainerInterface $container
+	 * @param Container $container
 	 */
 	public function __construct(
 		RequestInterface $request,
 		DomainInterface $domain,
 		ResponseInterface $response,
-		ContainerInterface $container
+		Container $container
 	) {
 		$this->request = $request;
 		$this->domain = $domain;
