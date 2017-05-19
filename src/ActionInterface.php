@@ -3,7 +3,6 @@
 namespace Dashifen\Action;
 
 use Dashifen\Response\ResponseInterface;
-use Interop\Container\ContainerInterface;
 
 /**
  * Interface ActionInterface
@@ -12,10 +11,9 @@ use Interop\Container\ContainerInterface;
  */
 interface ActionInterface {
 	/**
-	 * @param array              $parameter
-	 * @param ContainerInterface $container
+	 * @param array $parameter
 	 *
 	 * @return ResponseInterface;
 	 */
-	public function execute(array $parameter = [], ContainerInterface $container = null): ResponseInterface;
+	public function execute(array $parameter = []): ResponseInterface;
 }
