@@ -12,10 +12,10 @@ use Interop\Container\ContainerInterface;
  */
 interface ActionInterface {
 	/**
-	 * @param string             $parameter
+	 * @param array              $parameter
 	 * @param ContainerInterface $container
 	 *
 	 * @return ResponseInterface;
 	 */
-	public function execute(string $parameter = "", ContainerInterface $container = null): ResponseInterface;
+	public function execute(array $parameter = [], ContainerInterface $container = null): ResponseInterface;
 }

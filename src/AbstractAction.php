@@ -41,7 +41,7 @@ abstract class AbstractAction implements ActionInterface {
 	}
 	
 	/**
-	 * @param string $parameter
+	 * @param array              $parameter
 	 * @param ContainerInterface $container
 	 *
 	 * the purpose of passing the $container into the execute method is so
@@ -53,5 +53,5 @@ abstract class AbstractAction implements ActionInterface {
 	 *
 	 * @return ResponseInterface
 	 */
-	abstract public function execute(string $parameter = "", ContainerInterface $container = null): ResponseInterface;
+	abstract public function execute(array $parameter = [], ContainerInterface $container = null): ResponseInterface;
 }
