@@ -17,11 +17,11 @@
 		}
 	},
 	"require": {
-		"php": "^7.1",
-		"dashifen/domain": "^2",
-		"dashifen/request": "^1",
-		"dashifen/response": "^1",
-		"aura/di": "3.x-dev"
+		"php": "^7.2",
+		"dashifen/domain": "2.0.*",
+		"dashifen/request": "1.2.*",
+		"dashifen/response": "1.1.*",
+		"aura/di": "4.x-dev"
 	},
 	"license": "MIT"
 }
