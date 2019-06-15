@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c1ed6796ca8795a4dde3caef1f26a9b6",
+    "content-hash": "f10b63b836135f1444ace460dbe17eab",
     "packages": [
         {
             "name": "aura/di",
@@ -163,22 +163,22 @@
         },
         {
             "name": "dashifen/domain",
-            "version": "2.0.2",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dashifen/domain.git",
-                "reference": "990c99a780b0949aede124d476ae77f9b4428f75"
+                "reference": "6a029a0dea8a64e24b0eb935544cdda2da9bbaba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dashifen/domain/zipball/990c99a780b0949aede124d476ae77f9b4428f75",
-                "reference": "990c99a780b0949aede124d476ae77f9b4428f75",
+                "url": "https://api.github.com/repos/dashifen/domain/zipball/6a029a0dea8a64e24b0eb935544cdda2da9bbaba",
+                "reference": "6a029a0dea8a64e24b0eb935544cdda2da9bbaba",
                 "shasum": ""
             },
             "require": {
-                "dashifen/database": "^1.0",
-                "dashifen/session": "^1.0",
-                "php": "^7.1"
+                "dashifen/database": "1.4.*",
+                "dashifen/session": "1.2.*",
+                "php": "7.3.*"
             },
             "type": "library",
             "autoload": {
@@ -199,7 +199,7 @@
                 }
             ],
             "description": "interfaces and implementation for domains and payload delivery",
-            "time": "2017-08-23T14:51:11+00:00"
+            "time": "2019-06-15T02:53:54+00:00"
         },
         {
             "name": "dashifen/exception",
@@ -281,22 +281,23 @@
         },
         {
             "name": "dashifen/response",
-            "version": "1.3.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dashifen/response.git",
-                "reference": "61e49ee38547a64c780450c5360096ab2e95e568"
+                "reference": "1f5fc2900464337b482ee235c680405d84f52b64"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dashifen/response/zipball/61e49ee38547a64c780450c5360096ab2e95e568",
-                "reference": "61e49ee38547a64c780450c5360096ab2e95e568",
+                "url": "https://api.github.com/repos/dashifen/response/zipball/1f5fc2900464337b482ee235c680405d84f52b64",
+                "reference": "1f5fc2900464337b482ee235c680405d84f52b64",
                 "shasum": ""
             },
             "require": {
                 "dashifen/exception": "1.1.*",
                 "php": "7.3.*",
-                "zendframework/zend-diactoros": "2.1.*"
+                "zendframework/zend-diactoros": "2.1.*",
+                "zendframework/zend-httphandlerrunner": "1.0.*"
             },
             "type": "library",
             "autoload": {
@@ -317,7 +318,7 @@
                 }
             ],
             "description": "an encapsulation of a HTTP response",
-            "time": "2019-06-15T03:06:07+00:00"
+            "time": "2019-06-15T12:38:27+00:00"
         },
         {
             "name": "dashifen/session",
@@ -513,6 +514,59 @@
             "time": "2016-08-06T14:39:51+00:00"
         },
         {
+            "name": "psr/http-server-handler",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/php-fig/http-server-handler.git",
+                "reference": "f981eec4f9870ace3ee8ada18c88a59461080cba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/php-fig/http-server-handler/zipball/f981eec4f9870ace3ee8ada18c88a59461080cba",
+                "reference": "f981eec4f9870ace3ee8ada18c88a59461080cba",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=7.0",
+                "psr/http-message": "^1.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Psr\\Http\\Server\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "PHP-FIG",
+                    "homepage": "http://www.php-fig.org/"
+                }
+            ],
+            "description": "Common interface for HTTP server-side request handler",
+            "keywords": [
+                "handler",
+                "http",
+                "http-interop",
+                "psr",
+                "psr-15",
+                "psr-7",
+                "request",
+                "response",
+                "server"
+            ],
+            "time": "2019-06-07T16:00:12+00:00"
+        },
+        {
             "name": "psr/log",
             "version": "dev-master",
             "source": {
@@ -624,6 +678,60 @@
                 "psr-7"
             ],
             "time": "2019-04-29T21:11:57+00:00"
+        },
+        {
+            "name": "zendframework/zend-httphandlerrunner",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/zendframework/zend-httphandlerrunner.git",
+                "reference": "21cb0b45802a97107febbb502d4c42dc63478e15"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/zendframework/zend-httphandlerrunner/zipball/21cb0b45802a97107febbb502d4c42dc63478e15",
+                "reference": "21cb0b45802a97107febbb502d4c42dc63478e15",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.1",
+                "psr/http-message": "^1.0",
+                "psr/http-message-implementation": "^1.0",
+                "psr/http-server-handler": "^1.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.0.2",
+                "zendframework/zend-coding-standard": "~1.0.0",
+                "zendframework/zend-diactoros": "^1.7"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                },
+                "zf": {
+                    "config-provider": "Zend\\HttpHandlerRunner\\ConfigProvider"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Zend\\HttpHandlerRunner\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Execute PSR-15 RequestHandlerInterface instances and emit responses they generate.",
+            "keywords": [
+                "ZendFramework",
+                "components",
+                "expressive",
+                "psr-15",
+                "psr-7",
+                "zf"
+            ],
+            "time": "2019-02-19T17:57:43+00:00"
         }
     ],
     "packages-dev": [],
