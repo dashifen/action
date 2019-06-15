@@ -17,7 +17,7 @@
 		}
 	},
 	"require": {
-		"php": "^7.2",
+		"php": "7.3.*",
 		"dashifen/domain": "2.0.*",
 		"dashifen/request": "1.2.*",
 		"dashifen/response": "1.1.*",
