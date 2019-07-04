@@ -18,10 +18,10 @@
 	},
 	"require": {
 		"php": "7.3.*",
-		"dashifen/domain": "2.1.*",
-		"dashifen/request": "1.3.*",
-		"dashifen/response": "2.0.*",
-		"aura/di": "4.x-dev"
+		"dashifen/domain": "^2.1",
+		"dashifen/request": "^1.3",
+		"dashifen/response": "^2.0",
+		"psr/container": "^1.0"
 	},
 	"license": "MIT"
 }

@@ -4,61 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f10b63b836135f1444ace460dbe17eab",
+    "content-hash": "a8df9004826ec050f6141fb186b7ff4e",
     "packages": [
-        {
-            "name": "aura/di",
-            "version": "4.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/auraphp/Aura.Di.git",
-                "reference": "ea4b166e9006babca411732c4d45ee14efa32259"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/auraphp/Aura.Di/zipball/ea4b166e9006babca411732c4d45ee14efa32259",
-                "reference": "ea4b166e9006babca411732c4d45ee14efa32259",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=7.2.0",
-                "psr/container": "^1.0"
-            },
-            "provide": {
-                "psr/container-implementation": "^1.0"
-            },
-            "require-dev": {
-                "acclimate/container": "^2",
-                "phpunit/phpunit": "^7",
-                "producer/producer": "^2.3"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Aura\\Di\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Aura.Di Contributors",
-                    "homepage": "https://github.com/auraphp/Aura.Di/contributors"
-                }
-            ],
-            "description": "A serializable dependency injection container with constructor and setter injection, interface and trait awareness, configuration inheritance, and much more.",
-            "homepage": "https://github.com/auraphp/Aura.Di",
-            "keywords": [
-                "container",
-                "dependency injection",
-                "dependency injection container",
-                "di",
-                "di container"
-            ],
-            "time": "2019-04-26T12:07:02+00:00"
-        },
         {
             "name": "aura/sql",
             "version": "3.0.0",
@@ -281,16 +228,16 @@
         },
         {
             "name": "dashifen/response",
-            "version": "2.0.1",
+            "version": "2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dashifen/response.git",
-                "reference": "1f5fc2900464337b482ee235c680405d84f52b64"
+                "reference": "7042062944b13c358016d7ec97a00398bd9900f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dashifen/response/zipball/1f5fc2900464337b482ee235c680405d84f52b64",
-                "reference": "1f5fc2900464337b482ee235c680405d84f52b64",
+                "url": "https://api.github.com/repos/dashifen/response/zipball/7042062944b13c358016d7ec97a00398bd9900f5",
+                "reference": "7042062944b13c358016d7ec97a00398bd9900f5",
                 "shasum": ""
             },
             "require": {
@@ -318,7 +265,7 @@
                 }
             ],
             "description": "an encapsulation of a HTTP response",
-            "time": "2019-06-15T12:38:27+00:00"
+            "time": "2019-06-15T13:30:27+00:00"
         },
         {
             "name": "dashifen/session",
@@ -737,9 +684,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "aura/di": 20
-    },
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
