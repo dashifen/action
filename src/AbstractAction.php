@@ -3,7 +3,6 @@
 namespace Dashifen\Action;
 
 use Dashifen\Domain\DomainInterface;
-use Psr\Container\ContainerInterface;
 use Dashifen\Request\RequestInterface;
 use Dashifen\Response\ResponseInterface;
 
@@ -24,28 +23,20 @@ abstract class AbstractAction implements ActionInterface {
   protected $response;
 
   /**
-   * @var ContainerInterface $container
-   */
-  protected $container;
-
-  /**
    * AbstractAction constructor.
    *
    * @param RequestInterface   $request
    * @param DomainInterface    $domain
    * @param ResponseInterface  $response
-   * @param ContainerInterface $container
    */
   public function __construct (
     RequestInterface $request,
     DomainInterface $domain,
-    ResponseInterface $response,
-    ContainerInterface $container
+    ResponseInterface $response
   ) {
     $this->request = $request;
     $this->domain = $domain;
     $this->response = $response;
-    $this->container = $container;
   }
 
   /**
