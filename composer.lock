@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a8df9004826ec050f6141fb186b7ff4e",
+    "content-hash": "cae2001d1e8a34c56fbef715f09ab855",
     "packages": [
         {
             "name": "aura/sql",
@@ -61,22 +61,22 @@
         },
         {
             "name": "dashifen/database",
-            "version": "1.4.1",
+            "version": "1.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dashifen/database.git",
-                "reference": "4231fcb76359fa4b7ed70841ea3cfaed4a34bdf6"
+                "reference": "8be18a1e458b5d621870b232431fb6d92c703a36"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dashifen/database/zipball/4231fcb76359fa4b7ed70841ea3cfaed4a34bdf6",
-                "reference": "4231fcb76359fa4b7ed70841ea3cfaed4a34bdf6",
+                "url": "https://api.github.com/repos/dashifen/database/zipball/8be18a1e458b5d621870b232431fb6d92c703a36",
+                "reference": "8be18a1e458b5d621870b232431fb6d92c703a36",
                 "shasum": ""
             },
             "require": {
                 "aura/sql": "3.0.*",
                 "dashifen/exception": "1.1.*",
-                "php": "7.3.*"
+                "php": "^7.1"
             },
             "require-dev": {
                 "league/booboo": "^1.0"
@@ -106,26 +106,26 @@
                 "database",
                 "pdo"
             ],
-            "time": "2019-06-15T02:46:05+00:00"
+            "time": "2019-06-15T02:41:30+00:00"
         },
         {
             "name": "dashifen/domain",
-            "version": "2.1.0",
+            "version": "2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dashifen/domain.git",
-                "reference": "6a029a0dea8a64e24b0eb935544cdda2da9bbaba"
+                "reference": "9dcbe83d3978e26b750aa8c6a1baabbdecc5e9c0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dashifen/domain/zipball/6a029a0dea8a64e24b0eb935544cdda2da9bbaba",
-                "reference": "6a029a0dea8a64e24b0eb935544cdda2da9bbaba",
+                "url": "https://api.github.com/repos/dashifen/domain/zipball/9dcbe83d3978e26b750aa8c6a1baabbdecc5e9c0",
+                "reference": "9dcbe83d3978e26b750aa8c6a1baabbdecc5e9c0",
                 "shasum": ""
             },
             "require": {
                 "dashifen/database": "1.4.*",
                 "dashifen/session": "1.2.*",
-                "php": "7.3.*"
+                "php": ">=7.3"
             },
             "type": "library",
             "autoload": {
@@ -146,24 +146,24 @@
                 }
             ],
             "description": "interfaces and implementation for domains and payload delivery",
-            "time": "2019-06-15T02:53:54+00:00"
+            "time": "2019-11-30T20:13:29+00:00"
         },
         {
             "name": "dashifen/exception",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dashifen/exception.git",
-                "reference": "7e388534a73e8021bf4cc49e8656fa42497da212"
+                "reference": "c900fdd58f4b50562810b9930d1f5c52b64da28b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dashifen/exception/zipball/7e388534a73e8021bf4cc49e8656fa42497da212",
-                "reference": "7e388534a73e8021bf4cc49e8656fa42497da212",
+                "url": "https://api.github.com/repos/dashifen/exception/zipball/c900fdd58f4b50562810b9930d1f5c52b64da28b",
+                "reference": "c900fdd58f4b50562810b9930d1f5c52b64da28b",
                 "shasum": ""
             },
             "require": {
-                "php": "7.3.*"
+                "php": ">=7.3"
             },
             "type": "library",
             "autoload": {
@@ -184,26 +184,26 @@
                 }
             ],
             "description": "a base class for exceptions in Dashifen's other work",
-            "time": "2019-06-15T02:55:25+00:00"
+            "time": "2019-11-30T20:08:44+00:00"
         },
         {
             "name": "dashifen/request",
-            "version": "1.3.0",
+            "version": "1.3.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dashifen/request.git",
-                "reference": "ab2833d252bb550f3749172255835dda1cb8cb93"
+                "reference": "c2b35f26695f61aa523d42e8bd3bff4fb2a61d0d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dashifen/request/zipball/ab2833d252bb550f3749172255835dda1cb8cb93",
-                "reference": "ab2833d252bb550f3749172255835dda1cb8cb93",
+                "url": "https://api.github.com/repos/dashifen/request/zipball/c2b35f26695f61aa523d42e8bd3bff4fb2a61d0d",
+                "reference": "c2b35f26695f61aa523d42e8bd3bff4fb2a61d0d",
                 "shasum": ""
             },
             "require": {
-                "dashifen/session": "1.2.* ",
-                "php": "7.3.*",
-                "zendframework/zend-diactoros": "2.1.*"
+                "dashifen/session": "^1",
+                "php": ">=7.3",
+                "zendframework/zend-diactoros": "^2"
             },
             "type": "library",
             "autoload": {
@@ -224,27 +224,27 @@
                 }
             ],
             "description": "a basic encapsulation of an http request from a visitor to a website",
-            "time": "2019-06-15T02:59:00+00:00"
+            "time": "2019-11-30T20:20:47+00:00"
         },
         {
             "name": "dashifen/response",
-            "version": "2.0.2",
+            "version": "2.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dashifen/response.git",
-                "reference": "7042062944b13c358016d7ec97a00398bd9900f5"
+                "reference": "bc3b789638c4a8991211b7e3968671c9bb42d914"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dashifen/response/zipball/7042062944b13c358016d7ec97a00398bd9900f5",
-                "reference": "7042062944b13c358016d7ec97a00398bd9900f5",
+                "url": "https://api.github.com/repos/dashifen/response/zipball/bc3b789638c4a8991211b7e3968671c9bb42d914",
+                "reference": "bc3b789638c4a8991211b7e3968671c9bb42d914",
                 "shasum": ""
             },
             "require": {
-                "dashifen/exception": "1.1.*",
-                "php": "7.3.*",
-                "zendframework/zend-diactoros": "2.1.*",
-                "zendframework/zend-httphandlerrunner": "1.0.*"
+                "dashifen/exception": "^1",
+                "php": ">=7.3",
+                "zendframework/zend-diactoros": "^2",
+                "zendframework/zend-httphandlerrunner": "^1"
             },
             "type": "library",
             "autoload": {
@@ -265,25 +265,25 @@
                 }
             ],
             "description": "an encapsulation of a HTTP response",
-            "time": "2019-06-15T13:30:27+00:00"
+            "time": "2019-11-30T20:17:06+00:00"
         },
         {
             "name": "dashifen/session",
-            "version": "1.2.0",
+            "version": "1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/dashifen/session.git",
-                "reference": "7f79e470309eb6c741a3088c3d48eae9e0fd42ae"
+                "reference": "c7dea4f9b927f8e5bde0b5fc9731ccd156956174"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/dashifen/session/zipball/7f79e470309eb6c741a3088c3d48eae9e0fd42ae",
-                "reference": "7f79e470309eb6c741a3088c3d48eae9e0fd42ae",
+                "url": "https://api.github.com/repos/dashifen/session/zipball/c7dea4f9b927f8e5bde0b5fc9731ccd156956174",
+                "reference": "c7dea4f9b927f8e5bde0b5fc9731ccd156956174",
                 "shasum": ""
             },
             "require": {
-                "dashifen/exception": "1.1.*",
-                "php": "7.3.*"
+                "dashifen/exception": "^1",
+                "php": ">=7.3"
             },
             "type": "library",
             "autoload": {
@@ -307,7 +307,7 @@
             "keywords": [
                 "session"
             ],
-            "time": "2019-06-15T02:51:33+00:00"
+            "time": "2019-11-30T20:22:13+00:00"
         },
         {
             "name": "psr/container",
@@ -315,12 +315,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/container.git",
-                "reference": "014d250daebff39eba15ba990eeb2a140798e77c"
+                "reference": "fc1bc363ecf887921e3897c7b1dad3587ae154eb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/container/zipball/014d250daebff39eba15ba990eeb2a140798e77c",
-                "reference": "014d250daebff39eba15ba990eeb2a140798e77c",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/fc1bc363ecf887921e3897c7b1dad3587ae154eb",
+                "reference": "fc1bc363ecf887921e3897c7b1dad3587ae154eb",
                 "shasum": ""
             },
             "require": {
@@ -356,7 +356,7 @@
                 "container-interop",
                 "psr"
             ],
-            "time": "2018-12-29T15:36:03+00:00"
+            "time": "2019-10-04T14:07:35+00:00"
         },
         {
             "name": "psr/http-factory",
@@ -416,12 +416,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/http-message.git",
-                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363"
+                "reference": "efd67d1dc14a7ef4fc4e518e7dee91c271d524e4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/http-message/zipball/f6561bf28d520154e4b0ec72be95418abe6d9363",
-                "reference": "f6561bf28d520154e4b0ec72be95418abe6d9363",
+                "url": "https://api.github.com/repos/php-fig/http-message/zipball/efd67d1dc14a7ef4fc4e518e7dee91c271d524e4",
+                "reference": "efd67d1dc14a7ef4fc4e518e7dee91c271d524e4",
                 "shasum": ""
             },
             "require": {
@@ -458,7 +458,7 @@
                 "request",
                 "response"
             ],
-            "time": "2016-08-06T14:39:51+00:00"
+            "time": "2019-08-29T13:16:46+00:00"
         },
         {
             "name": "psr/http-server-handler",
@@ -519,12 +519,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "c4421fcac1edd5a324fda73e589a5cf96e52ffd0"
+                "reference": "5628725d0e4d687e29575eb41f9d5ee7de33a84c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/c4421fcac1edd5a324fda73e589a5cf96e52ffd0",
-                "reference": "c4421fcac1edd5a324fda73e589a5cf96e52ffd0",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/5628725d0e4d687e29575eb41f9d5ee7de33a84c",
+                "reference": "5628725d0e4d687e29575eb41f9d5ee7de33a84c",
                 "shasum": ""
             },
             "require": {
@@ -558,20 +558,20 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2018-11-21T13:42:00+00:00"
+            "time": "2019-11-12T16:45:05+00:00"
         },
         {
             "name": "zendframework/zend-diactoros",
-            "version": "dev-master",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-diactoros.git",
-                "reference": "9a4b4a3c78c1a65e6096fb1f37ab424f33c68821"
+                "reference": "b62fcc6b0e85adf74d63fedfeccc057032c5dfed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/9a4b4a3c78c1a65e6096fb1f37ab424f33c68821",
-                "reference": "9a4b4a3c78c1a65e6096fb1f37ab424f33c68821",
+                "url": "https://api.github.com/repos/zendframework/zend-diactoros/zipball/b62fcc6b0e85adf74d63fedfeccc057032c5dfed",
+                "reference": "b62fcc6b0e85adf74d63fedfeccc057032c5dfed",
                 "shasum": ""
             },
             "require": {
@@ -584,6 +584,7 @@
                 "psr/http-message-implementation": "1.0"
             },
             "require-dev": {
+                "ext-curl": "*",
                 "ext-dom": "*",
                 "ext-libxml": "*",
                 "http-interop/http-factory-tests": "^0.5.0",
@@ -624,20 +625,20 @@
                 "psr",
                 "psr-7"
             ],
-            "time": "2019-04-29T21:11:57+00:00"
+            "time": "2019-11-13T19:19:28+00:00"
         },
         {
             "name": "zendframework/zend-httphandlerrunner",
-            "version": "1.0.2",
+            "version": "dev-develop",
             "source": {
                 "type": "git",
                 "url": "https://github.com/zendframework/zend-httphandlerrunner.git",
-                "reference": "21cb0b45802a97107febbb502d4c42dc63478e15"
+                "reference": "46df3c8bf1830c38400f96efe302669c76a6c907"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/zendframework/zend-httphandlerrunner/zipball/21cb0b45802a97107febbb502d4c42dc63478e15",
-                "reference": "21cb0b45802a97107febbb502d4c42dc63478e15",
+                "url": "https://api.github.com/repos/zendframework/zend-httphandlerrunner/zipball/46df3c8bf1830c38400f96efe302669c76a6c907",
+                "reference": "46df3c8bf1830c38400f96efe302669c76a6c907",
                 "shasum": ""
             },
             "require": {
@@ -649,12 +650,13 @@
             "require-dev": {
                 "phpunit/phpunit": "^7.0.2",
                 "zendframework/zend-coding-standard": "~1.0.0",
-                "zendframework/zend-diactoros": "^1.7"
+                "zendframework/zend-diactoros": "^1.7 || ^2.1.1"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.0-dev"
+                    "dev-master": "1.1.x-dev",
+                    "dev-develop": "1.2.x-dev"
                 },
                 "zf": {
                     "config-provider": "Zend\\HttpHandlerRunner\\ConfigProvider"
@@ -678,7 +680,7 @@
                 "psr-7",
                 "zf"
             ],
-            "time": "2019-02-19T17:57:43+00:00"
+            "time": "2019-02-19T18:21:34+00:00"
         }
     ],
     "packages-dev": [],
@@ -688,7 +690,7 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": "7.3.*"
+        "php": ">=7.3"
     },
     "platform-dev": []
 }
